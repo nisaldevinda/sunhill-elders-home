@@ -4433,7 +4433,7 @@ ul.pagination li:last-child {
   position: absolute;
 }
 .appointment-form-wrapper {
-  background: rgba(242, 87, 100, 0.85);
+  background: rgba(233, 89, 18, 0.85);
   padding: 42px 12px 42px;
 }
 .appointment-form-wrapper .appointment-form-heading {
@@ -6139,7 +6139,8 @@ footer a:hover {
     line-height: 42px;
   }
   #slider_1 .slider-content h3 {
-    display: none;
+    display: block !important;
+    font-size: 14px !important;
   }
   #slider_1 .slider-content a.btn-slider {
     font-size: 16px;
@@ -6744,3 +6745,20 @@ footer a:hover {
 }
 
 /*# sourceMappingURL=styles.css.map */
+.map-pin {
+  display: inline-block;
+  width: 20px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing as needed */
+  vertical-align: middle;
+}
+
+.mobile-visible {
+  display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-visible {
+    display: block !important;
+  }
+}
