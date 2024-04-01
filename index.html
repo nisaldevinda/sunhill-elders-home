@@ -367,7 +367,7 @@
 
                                 <a href="#" class="service-img-box">
                                     <figure class="service-img">
-                                        <img src="images/service_home_touch.webp" alt="service" />
+                                        <img src="images/service_home_touch.jpg" alt="service" />
                                     </figure> <!-- end .cause-img  -->
                                 </a>
 
@@ -390,7 +390,7 @@
 
                                 <a href="#" class="service-img-box">
                                     <figure class="service-img">
-                                        <img src="images/service_family_care.webp" alt="service" />
+                                        <img src="images/service_family_care.jpg" alt="service" />
                                     </figure> <!-- end .cause-img  -->
                                 </a>
 
@@ -415,7 +415,7 @@
 
                                 <a href="#" class="service-img-box">
                                     <figure class="service-img">
-                                        <img src="images/service_medical_care.webp" alt="service" />
+                                        <img src="images/service_medical_care.jpg" alt="service" />
                                     </figure> <!-- end .cause-img  -->
                                 </a>
 
@@ -440,7 +440,7 @@
 
                                 <a href="#" class="service-img-box">
                                     <figure class="service-img">
-                                        <img src="images/service_lonely_people.webp" alt="service" />
+                                        <img src="images/service_lonely_people.jpg" alt="service" />
                                     </figure> <!-- end .cause-img  -->
                                 </a>
 
@@ -465,7 +465,7 @@
 
                                 <a href="#" class="service-img-box">
                                     <figure class="service-img">
-                                        <img src="images/service_fitness.webp" alt="service" />
+                                        <img src="images/service_fitness.jpg" alt="service" />
                                     </figure> <!-- end .cause-img  -->
                                 </a>
 
@@ -534,7 +534,14 @@
                             We understand that everyone is different. 
                             Contact support center to discuss your individual in-home care needs on a no-obligation basis. 
                         </p>
-                        <a href="#" class="btn btn-theme btn-theme-invert margin-bottom-32">CONTACT WITH US</a>
+                        <button class="btn btn-theme btn-theme-invert margin-bottom-32" id="openPopup">VIEW TIMETABLE</button>
+
+                            <div class="popup" id="contactPopup">
+                                <div class="popup-content">
+                                    <span class="popup-close">&times;</span>
+                                    <img src="images/timetable.jpg" alt="Contact Us Image">
+                                </div>
+                            </div>
                     </div>
 
                     <div class="col-lg-5 col-md-5 hidden-sm">
@@ -1074,6 +1081,19 @@
        <script src="js/jquery.counterup.min.js"></script>
        <script src="js/venobox.min.js"></script>
        <script src="js/custom-scripts.js"></script>
+
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#openPopup").click(function(){
+        $("#contactPopup").fadeIn();
+    });
+
+    $(".popup-close").click(function(){
+        $("#contactPopup").fadeOut();
+    });
+});
+</script>
    </body>
 
 </html>
